@@ -1,0 +1,35 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 528px;
+  height: 581px;
+  background-color: $white-color;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal__btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background-color: $white-color;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  box-sizing: border-box;
+  outline-width: 0px;
+}
+.modal__btn-close {
+  width: 11px;
+  height: 11px;
+  outline-width: 0px;
+}
+.modal__btn-close:focus,
+.modal__btn-close:hover {
+  fill: $assent-color;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

@@ -1,0 +1,65 @@
+.modal-checkbox {
+  position: relative;
+  width: 425px;
+}
+.modal-checkbox__label {
+  position: relative;
+  width: 423px;
+}
+
+.modal-checkbox--text {
+  text-decoration: none;
+}
+
+.modal-checkbox__agree::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 3px solid $title-text-color;
+  border-radius: 2px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.checkbox:checked ~ div::before {
+  background-color: var(--accent-color);
+  border-color: var(--accent-color);
+  background: $assent-color;
+  border-radius: 2px;
+  border: 2px solid $assent-color;
+}
+.modal-checkbox__icon {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin-top: 28px;
+  margin-left: -22px;
+  z-index: 3;
+}
+.modal-checkbox--link-agree {
+  color: $assent-color;
+}
+.feedback-form__btn-submit {
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  background-color: $assent-color;
+  border: none;
+  color: $white-color;
+  font-size: 16px;
+  border-radius: 4px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  outline-width: 0px;
+}
+.feedback-form__btn-submit-text {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+}

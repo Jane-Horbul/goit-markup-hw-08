@@ -1,0 +1,19 @@
+footer {
+  display: block;
+  text-decoration: none;
+  background-color: $secondr-bg-color;
+}
+
+.address__text {
+  font-style: normal;
+  color: $white-color;
+}
+.address__text-link {
+  display: block;
+  font-style: normal;
+  color: $main-text-color;
+}
+.address {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
