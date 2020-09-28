@@ -1,6 +1,17 @@
 .form-footer {
   display: flex;
   margin-top: 75px;
+  @include for-size(mobile) {
+    display: block;
+  }
+
+  @include for-size(tablet) {
+    display: block;
+  }
+
+  @include for-size(desktop) {
+    display: flex;
+  }
 }
 .form-footer__title {
   font-weight: bold;

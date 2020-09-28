@@ -30,36 +30,7 @@
   text-align: center;
   padding-top: 25px;
 }
-/*Our team*/
-.team {
-  background: $bg-color;
-  padding-top: 95px;
-}
 
-.team__list {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.team__item {
-  width: calc((100% - 30px * 3) / 4);
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.team__item:nth-child(4n) {
-  margin-right: 0;
-}
-.team__name {
-  text-align: center;
-}
-.team__card {
-  background: $white-color;
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-}
 /*icons*/
 .sl-icon {
   width: 20px;

@@ -9,9 +9,17 @@
   flex-wrap: wrap;
   margin-bottom: 95px;
 }
-.customers__item {
-  width: calc((100% - 30px * 5) / 6);
-  margin-right: 30px;
+@media screen and (max-width: 480px) {
+  .customers__item {
+    width: calc((100% - 30px * 3) / 3);
+    margin-right: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .customers__item {
+    width: calc((100% - 30px * 5) / 6);
+    margin-right: 30px;
+  }
 }
 .customers__item:nth-child(6n) {
   margin-right: 0;
@@ -40,6 +48,7 @@
   margin-left: 50px;
   fill: #afb1b8;
 }
+
 .customers__link:focus .customers__logo,
 .customers__link:hover .customers__logo {
   fill: $assent-color;
