@@ -62,8 +62,9 @@ textarea {
 .section {
   padding-top: 110px;
 }
+
 .flexbox {
-  display: flex;
+  display: block;
   @include for-size(mobile) {
     display: block;
   }
