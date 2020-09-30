@@ -1,6 +1,7 @@
 .feedback-form {
   display: flex;
   flex-wrap: wrap;
+  word-wrap: break-word;
   justify-content: space-between;
   align-items: flex-start;
   width: 448px;
@@ -8,17 +9,28 @@
   margin-right: 40px;
   margin-left: 40px;
 }
+@media screen and (min-width: 768px) {
+  .feedback-form {
+    width: 528px;
+  }
+}
 .feedback-form__title {
+  width: 370px;
   margin-top: 40px;
   margin-bottom: 12px;
   font-weight: bold;
   font-size: 20px;
   line-height: 23px;
   text-align: center;
+
+  @include for-size(desktop) {
+    width: 448px;
+  }
+
   letter-spacing: 0.02em;
   color: $title-text-color;
 }
-.feedback-form__field--title {
+.feedback-form__title .feedback-form__field--title {
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -31,9 +43,16 @@
 }
 
 .feedback-form__field {
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+
+  @include for-size(mobile-only) {
+    width: 270px;
+  }
+  @include for-size(desktop) {
+    width: 450px;
+  }
 }

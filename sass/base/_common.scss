@@ -89,6 +89,10 @@ h1 {
   color: $white-color;
   letter-spacing: 0.06em;
 
+  @include for-size(mobile-only) {
+    font-size: 26px;
+  }
+
   @include for-size(mobile) {
     font-size: 26px;
   }
