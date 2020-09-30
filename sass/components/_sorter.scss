@@ -1,4 +1,9 @@
 .sorter {
   display: flex;
-  justify-content: center;
+  justify-content: left;
+  flex-wrap: wrap;
+
+  @include for-size(tablet) {
+    justify-content: center;
+  }
 }

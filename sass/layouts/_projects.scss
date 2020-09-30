@@ -1,11 +1,16 @@
 .projects {
-  display: flex;
-  flex-wrap: wrap;
+  display: block;
   margin: -15px;
+
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 
 .projects__item {
-  width: calc((100% - 30px * 3) / 3);
+  width: 450px;
+  //width: calc((100% - 30px * 3) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
 }
