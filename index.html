@@ -20,12 +20,15 @@
             <a class="link" href="./index.html"><span class="logo"><span class="logo__part">Web</span>Studio</span></a>
             <!--mobile menu-->
             <div class="mobile-menu">
-                <button type="button" class="mobile-menu__btn is-open" data-menu-button>
+                <button type="button" class="mobile-menu__btn is-open" aria-expanded="false" data-menu-button>
+
                     <svg aria-label="Переключатель мобильного меню" class="mobile-menu__btn-icon">
                         <use href="./img/speite-for-mobile-menu.svg#close_mobile" class="cross-icon"></use>
                         <use href="./img/speite-for-mobile-menu.svg#menu_mobile" class="menu-icon"></use>
                     </svg>
                 </button>
+                <div class="mobile-menu__container is-open" data-menu><span class="menu--main">Портфолио</span>
+                </div>
             </div>
             <nav class="navigation">
                 <!--site menu-->
@@ -544,8 +547,14 @@
     <script>
         (() => {
             const menuBtnRef = document.querySelector(" [data-menu-button] ");
+            const mobileMenuRef = document.querySelector(" [data-menu] ");
             menuBtnRef.addEventListener("click", () => {
-                menuBtnRef.classList.toogle("is-open");
+                const expanded = menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+
+                menuBtnRef.classList.toggle("is-open");
+                menuBtnRef.setAttribute("aria-expanded", !expanded);
+
+                mobileMenuRef.classList.toggle("is-open");
 
             })
         })();
