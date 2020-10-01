@@ -1,16 +1,17 @@
 .menu {
-  display: flex;
+  display: none;
+
+  @include for-size(tablet) {
+    display: flex;
+  }
 }
 .navigation {
-  display: flex;
+  display: none;
   align-items: center;
   margin-right: auto;
 
-  @include for-size(mobile-only) {
-    display: none;
-  }
-  @include for-size(mobile) {
-    display: none;
+  @include for-size(tablet) {
+    display: flex;
   }
 }
 .menu--main:hover,

@@ -172,24 +172,24 @@ h4 {
 }
 
 .menu {
-  display: flex;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: flex;
+  }
 }
 
 .navigation {
-  display: flex;
+  display: none;
   align-items: center;
   margin-right: auto;
 }
 
-@media (max-width: 479px) {
+@media (min-width: 768px) {
   .navigation {
-    display: none;
-  }
-}
-
-@media (min-width: 480px) {
-  .navigation {
-    display: none;
+    display: flex;
   }
 }
 
@@ -263,6 +263,31 @@ h4 {
 
 .menu__contacts-item:hover .menu__icon-mail {
   fill: #2196f3;
+}
+
+.mobile-menu {
+  display: block;
+}
+
+.mobile-menu__btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: 0px;
+  background-color: transparent;
+}
+
+.mobile-menu__btn-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.mobile-menu__btn .cross-icon {
+  display: none;
+}
+
+.mobile-menu__btn .is-open .cross-icon {
+  display: block;
 }
 
 .btn {
@@ -719,6 +744,14 @@ h4 {
   width: 450px;
   margin-right: 30px;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .projects__item {
+    width: calc((100% - 30px * 3) / 3);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .projects__item:nth-child(3n) {
