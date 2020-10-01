@@ -3,7 +3,7 @@
 }
 
 .mobile-menu__btn {
-  display: inline-flex;
+  display: block;
   margin: 0;
   padding: 0;
   border: 0px;
@@ -18,6 +18,9 @@
 .mobile-menu__btn .cross-icon {
   display: none;
 }
-.mobile-menu__btn .is-open .cross-icon {
+.mobile-menu__btn.is-open .cross-icon {
   display: block;
+}
+.mobile-menu__btn.is-open .menu-icon {
+  display: none;
 }
