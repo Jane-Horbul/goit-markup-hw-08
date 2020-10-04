@@ -4,12 +4,41 @@
   margin-left: auto;
   margin-right: auto;
   padding-top: 215px;
+
+  @include for-size(tablet) {
+    padding-top: 125px;
+  }
+
+  @include for-size(mobile) {
+    padding-top: 125px;
+  }
+  @include for-size(mobile-only) {
+    padding-top: 125px;
+  }
 }
 
 .hero {
-  background-image: url(../img/slidebar-001.jpg);
+  background-image: url(../img/desktop/slidebar-001.jpg);
   max-width: 1600px;
   height: 600px;
   background-repeat: no-repeat;
   background-position: center;
+
+  @include for-size(desktop) {
+    background-image: url(../img/desktop/slidebar-001.jpg);
+  }
+
+  @include for-size(tablet) {
+    background-image: url(../img/tablet/slidebar-001.jpg);
+    height: 400px;
+  }
+
+  @include for-size(mobile) {
+    background-image: url(../img/mobile/slidebar-001.jpg);
+    height: 400px;
+  }
+  @include for-size(mobile-only) {
+    background-image: url(../img/mobile/slidebar-001.jpg);
+    height: 400px;
+  }
 }
