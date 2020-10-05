@@ -14,7 +14,7 @@
   margin-bottom: 30px;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .projects__item {
     width: calc((100% - 30px * 2) / 2);
     margin-right: 30px;

@@ -85,7 +85,7 @@
     bottom: 0px;
     top: 25px;
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
     bottom: 0px;
     top: 67px;
   }

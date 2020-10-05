@@ -49,7 +49,7 @@
       display: block;
     }
   }
-  @media screen and (max-width: 1199px) {
+  @media screen and (min-width: 767px) and (max-width: 1199px) {
     display: flex;
     margin-top: -53px;
     justify-content: flex-end;
@@ -70,7 +70,7 @@
 .menu-contacts {
   height: 100%;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 767px) and (max-width: 1199px) {
   .menu-contacts {
     margin-left: 75px;
   }

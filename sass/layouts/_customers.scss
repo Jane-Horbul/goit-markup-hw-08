@@ -16,13 +16,21 @@
     margin-bottom: 50px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px) {
   .customers__item {
     width: calc((100% - 30px * 2) / 2);
     margin-right: 30px;
   }
 }
-
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers__item {
+    width: calc((100% - 30px * 3) / 3);
+    margin-right: 30px;
+  }
+  .customers__item:nth-child(3n) {
+    margin-right: 0;
+  }
+}
 @media screen and (min-width: 1200px) {
   .customers__item {
     width: calc((100% - 30px * 5) / 6);

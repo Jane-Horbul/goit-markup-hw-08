@@ -5,18 +5,16 @@
 }
 
 .team__list {
-  display: flex;
-  flex-wrap: wrap;
-  @include for-size(mobile) {
-    display: block;
-  }
+  display: block;
 
   @include for-size(tablet) {
-    display: block;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   @include for-size(desktop) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -29,6 +27,13 @@
 }
 .team__item:nth-child(4n) {
   margin-right: 0;
+}
+@media screen and (min-width: 767px) and (max-width: 1199px) {
+  .team__item {
+    width: calc((100% - 30px * 2) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 .team__name {
   text-align: center;
