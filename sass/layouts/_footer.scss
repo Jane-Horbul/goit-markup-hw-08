@@ -2,8 +2,21 @@ footer {
   display: block;
   text-decoration: none;
   background-color: $secondr-bg-color;
-}
 
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.footer {
+  display: block;
+  @include for-size(tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .address__text {
   font-style: normal;
   color: $white-color;
@@ -17,10 +30,12 @@ footer {
   margin-top: 60px;
   margin-bottom: 60px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 1199px) {
     text-align: center;
     margin-top: 0px;
     margin-bottom: 0px;
+    margin-right: auto;
+    margin-left: auto;
     padding-top: 65px;
   }
 }

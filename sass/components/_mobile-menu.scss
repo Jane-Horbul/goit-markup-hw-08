@@ -49,8 +49,17 @@
       display: block;
     }
   }
-
-  @media screen and (min-width: 767px) {
+  @media screen and (max-width: 1199px) {
+    display: flex;
+    margin-top: -53px;
+    justify-content: flex-end;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    align-items: center;
+  }
+  @media screen and (min-width: 1199px) {
     display: flex;
     justify-content: space-between;
     flex-grow: 1;
@@ -60,4 +69,9 @@
 .menu-navigation,
 .menu-contacts {
   height: 100%;
+}
+@media screen and (max-width: 1199px) {
+  .menu-contacts {
+    margin-left: 75px;
+  }
 }
