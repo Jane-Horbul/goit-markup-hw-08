@@ -4,6 +4,10 @@
   color: $logo-color;
   font-style: normal;
   margin-right: 95px;
+
+  @media screen and (max-width: 767px) {
+    margin-right: 0px;
+  }
 }
 .logo__part {
   font-family: "Raleway", sans-serif;

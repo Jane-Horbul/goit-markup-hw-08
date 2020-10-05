@@ -4,6 +4,13 @@
   margin-left: 50px;
   padding-left: 0px;
   padding-right: 0px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 65px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
 }
 .sl__title {
   color: $white-color;

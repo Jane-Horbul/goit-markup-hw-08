@@ -16,4 +16,11 @@ footer {
 .address {
   margin-top: 60px;
   margin-bottom: 60px;
+
+  @media screen and (max-width: 767px) {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-top: 65px;
+  }
 }

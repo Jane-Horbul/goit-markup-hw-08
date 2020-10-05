@@ -41,6 +41,11 @@
   text-align: center;
   letter-spacing: 0.06em;
   outline-width: 0px;
+
+  @media screen and (max-width: 767px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .btn__submit-text {
   margin-top: auto;

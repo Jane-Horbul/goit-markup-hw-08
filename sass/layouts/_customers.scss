@@ -8,6 +8,13 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 95px;
+
+  @include for-size(mobile-only) {
+    margin-bottom: 50px;
+  }
+  @include for-size(mobile) {
+    margin-bottom: 50px;
+  }
 }
 @media screen and (max-width: 480px) {
   .customers__item {
@@ -34,6 +41,10 @@
   display: block;
   text-decoration: none;
 
+  @include for-size(mobile-only) {
+    width: 210px;
+    margin-bottom: 30px;
+  }
   @include for-size(mobile) {
     width: 210px;
     margin-bottom: 30px;

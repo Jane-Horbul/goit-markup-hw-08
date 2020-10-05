@@ -24,21 +24,14 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @include for-size(desktop) {
-    background-image: url(../img/desktop/slidebar-001.jpg);
-  }
-
-  @include for-size(tablet) {
+  @media screen and (max-width: 1199px) {
     background-image: url(../img/tablet/slidebar-001.jpg);
+    max-width: 1200px;
     height: 400px;
   }
-
-  @include for-size(mobile) {
+  @media screen and (max-width: 767px) {
     background-image: url(../img/mobile/slidebar-001.jpg);
-    height: 400px;
-  }
-  @include for-size(mobile-only) {
-    background-image: url(../img/mobile/slidebar-001.jpg);
+    max-width: 768px;
     height: 400px;
   }
 }

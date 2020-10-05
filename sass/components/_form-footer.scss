@@ -1,8 +1,12 @@
 .form-footer {
   display: block;
   margin-top: 75px;
-  @include for-size(mobile) {
+
+  @media screen and (max-width: 767px) {
     display: block;
+    margin-top: 60px;
+    padding-bottom: 50px;
+    text-align: center;
   }
 
   @include for-size(tablet) {
@@ -32,18 +36,6 @@
   margin-top: 20px;
   margin-right: 12px;
   outline-width: 0px;
-
-  @include for-size(mobile) {
-    width: 260px;
-  }
-
-  @include for-size(tablet) {
-    width: 300px;
-  }
-
-  @include for-size(desktop) {
-    width: 350px;
-  }
 }
 .form-footer--hint::placeholder {
   font-size: 16px;
@@ -62,18 +54,6 @@
   margin-bottom: 15px;
   background-color: transparent;
   outline-width: 0px;
-
-  @include for-size(mobile) {
-    width: 250px;
-  }
-
-  @include for-size(tablet) {
-    width: 300px;
-  }
-
-  @include for-size(desktop) {
-    width: 350px;
-  }
 }
 .form-footer__icon {
   width: 24px;
