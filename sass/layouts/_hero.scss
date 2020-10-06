@@ -24,14 +24,14 @@
   background-repeat: no-repeat;
   background-position: center;
 
-  @media screen and (max-width: 1199px) {
+  @media screen and (max-width: 767px) {
     background-image: url(../img/tablet/slidebar-001.jpg);
     max-width: 1200px;
     height: 400px;
   }
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 479px) {
     background-image: url(../img/mobile/slidebar-001.jpg);
-    max-width: 768px;
+    max-width: 480px;
     height: 400px;
   }
 }

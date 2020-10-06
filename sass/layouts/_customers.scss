@@ -16,6 +16,14 @@
     margin-bottom: 50px;
   }
 }
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers__list {
+    justify-content: center;
+    width: 768px;
+    margin-left: 15px;
+    margin-right: auto;
+  }
+}
 @media screen and (max-width: 767px) {
   .customers__item {
     width: calc((100% - 30px * 2) / 2);
@@ -26,6 +34,7 @@
   .customers__item {
     width: calc((100% - 30px * 3) / 3);
     margin-right: 30px;
+    margin-left: auto;
   }
   .customers__item:nth-child(3n) {
     margin-right: 0;

@@ -583,7 +583,7 @@ h4 {
   background-position: center;
 }
 
-@media screen and (max-width: 1199px) {
+@media screen and (max-width: 767px) {
   .hero {
     background-image: url(../img/tablet/slidebar-001.jpg);
     max-width: 1200px;
@@ -591,10 +591,10 @@ h4 {
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 479px) {
   .hero {
     background-image: url(../img/mobile/slidebar-001.jpg);
-    max-width: 768px;
+    max-width: 480px;
     height: 400px;
   }
 }
@@ -723,7 +723,8 @@ h4 {
 }
 
 .services {
-  padding-top: 110px;
+  padding-top: 50px;
+  padding-bottom: 80px;
 }
 
 .services__list {
@@ -798,7 +799,7 @@ h4 {
 /*Our team*/
 .team {
   background: #f5f4fa;
-  padding-top: 95px;
+  padding-top: 60px;
 }
 
 .team__list {
@@ -882,6 +883,15 @@ h4 {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .customers__list {
+    justify-content: center;
+    width: 768px;
+    margin-left: 15px;
+    margin-right: auto;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .customers__item {
     width: calc((100% - 30px * 2) / 2);
@@ -893,6 +903,7 @@ h4 {
   .customers__item {
     width: calc((100% - 30px * 3) / 3);
     margin-right: 30px;
+    margin-left: auto;
   }
   .customers__item:nth-child(3n) {
     margin-right: 0;
